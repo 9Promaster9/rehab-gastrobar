@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Рехаб — Гастробар &amp; Лаунж в Саратове (Демо)</title>
+  <meta name="description" content="Демонстрационная версия сайта гастробара «Рехаб» в Саратове на ул. имени И.В. Мичурина, 108.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="demo-banner" role="status" id="demo-banner">
+    Демонстрационная версия сайта. Не предназначена для эксплуатации.
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Гастробар Рехаб — на главную">
+        <svg class="brand-mark" viewBox="0 0 64 36" fill="none" aria-hidden="true">
+          <path d="M8 6C8 18 17 24 32 24C47 24 56 18 56 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M18 30H46" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">РЕХАБ</span>
+          <span class="brand-sub">Гастробар</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="#about">О месте</a>
+        <a href="#menu">Меню</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#booking">Бронь</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#booking" class="btn btn-primary btn-sm">Забронировать</a>
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Открыть меню навигации" aria-expanded="false" aria-controls="mobile-nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <line x1="3" y1="7" x2="21" y2="7"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="17" x2="21" y2="17"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Мобильная навигация">
+      <a href="#about">О месте</a>
+      <a href="#menu">Меню</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#booking">Бронирование</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <span class="eyebrow">Саратов · ул. имени И.В. Мичурина, 108</span>
+          <h1 class="hero-title">
+            Рехаб
+            <span>гастробар и лаунж</span>
+          </h1>
+          <p class="hero-desc" id="hero-description">
+            Ресторан «Рехаб» — это место, где вы можете насладиться вкусной едой, ароматными кальянами, свежими коктейлями и приятной музыкой.
+          </p>
+          <div class="hero-actions">
+            <a href="#booking" class="btn btn-primary">Забронировать стол</a>
+            <a href="#menu" class="btn btn-outline">Перейти к меню</a>
+          </div>
+          <div class="hero-meta">
+            <div>
+              <span class="meta-item-label">Яндекс Карты</span>
+              <span class="meta-item-value">4,9 · 747 оценок</span>
+            </div>
+            <div>
+              <span class="meta-item-label">Средний чек</span>
+              <span class="meta-item-value" id="meta-check">1 350 ₽</span>
+            </div>
+            <div>
+              <span class="meta-item-label">Режим работы</span>
+              <span class="meta-item-value" id="meta-hours">с 12:00</span>
+            </div>
+          </div>
+        </div>
+
+        <figure class="editorial-frame reveal">
+          <img src="assets/images/2.svg" alt="Интерьер гастробара Рехаб: тёмная кирпичная стена, тёплый свет лампы и лаунж-зона">
+          <figcaption class="editorial-caption">
+            <span>Интерьер зала</span>
+            <span>Мичурина, 108</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Menu Section: Huge N/A Notice -->
+    <section class="section menu-section" id="menu" aria-labelledby="menu-heading">
+      <div class="container">
+        <div class="reveal">
+          <span class="eyebrow">Кухня и бар</span>
+          <h2 class="section-title" id="menu-heading">Меню</h2>
+        </div>
+
+        <div class="menu-unavailable-box reveal" id="menu-container" role="region" aria-label="Статус меню">
+          <p class="menu-unavailable-code" id="menu-code">Н/Д</p>
+          <p class="menu-unavailable-text" id="menu-message">меню сейчас недоступно</p>
+          <p class="menu-unavailable-sub">
+            В демонстрационной версии раздел меню временно отключён. Полный перечень блюд, граммовки и цены будут добавлены в финальной версии сайта.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Events -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container about-grid">
+        <div class="about-copy reveal">
+          <span class="eyebrow">Концепция и события</span>
+          <h2 class="section-title" id="about-heading">Вкусная кухня, кальяны, коктейли и ритм вечера</h2>
+          <p id="about-text-1">
+            Ресторан «Рехаб» — это место, где вы можете насладиться вкусной едой, ароматными кальянами, свежими коктейлями и приятной музыкой.
+          </p>
+          <p id="about-text-2">
+            В ресторане проводятся различные мероприятия, такие как бизнес-ланчи, караоке-вечера и дискотеки. Гости высоко оценивают работу персонала, отмечая их внимательность, доброжелательность и профессионализм.
+          </p>
+
+          <ul class="editorial-list" id="events-list" aria-label="Форматы и мероприятия">
+            <!-- Populated from data -->
+          </ul>
+        </div>
+
+        <figure class="editorial-frame reveal">
+          <img src="assets/images/1.svg" alt="Вечерняя атмосфера и гости гастробара Рехаб на фоне неоновой вывески" loading="lazy">
+          <figcaption class="editorial-caption">
+            <span>Вечерняя атмосфера</span>
+            <span>Караоке · DJ · Лаунж</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section" id="reviews" aria-labelledby="reviews-heading">
+      <div class="container">
+        <div class="reviews-header reveal">
+          <div>
+            <span class="eyebrow">Впечатления гостей</span>
+            <h2 class="section-title" id="reviews-heading">Отзывы с карт</h2>
+          </div>
+          <div class="reviews-tabs" role="tablist" aria-label="Источники отзывов">
+            <button class="tab-btn is-active" type="button" role="tab" aria-selected="true" data-review-tab="twogis">2ГИС</button>
+            <button class="tab-btn" type="button" role="tab" aria-selected="false" data-review-tab="yandex">Яндекс Карты</button>
+            <button class="tab-btn" type="button" role="tab" aria-selected="false" data-review-tab="google">Google Карты</button>
+          </div>
+        </div>
+
+        <div id="reviews-content" class="reveal" aria-live="polite">
+          <!-- Rendered by js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="section" id="booking" aria-labelledby="booking-heading">
+      <div class="container booking-grid">
+        <div class="reveal">
+          <span class="eyebrow">Резерв стола</span>
+          <h2 class="section-title" id="booking-heading">Забронировать вечер в «Рехабе»</h2>
+          <p class="lead">
+            Выберите удобную дату, время и количество гостей. В демонстрационной версии форма проверяет данные и показывает предварительный просмотр заявки без отправки в заведение.
+          </p>
+        </div>
+
+        <form class="booking-form reveal" id="booking-form" novalidate>
+          <div class="form-row two-col">
+            <div class="form-field">
+              <label for="booking-date">Дата *</label>
+              <input type="date" id="booking-date" name="date" required>
+              <span class="field-error" data-error-for="date"></span>
+            </div>
+            <div class="form-field">
+              <label for="booking-time">Время *</label>
+              <input type="time" id="booking-time" name="time" value="19:00" required>
+              <span class="field-error" data-error-for="time"></span>
+            </div>
+          </div>
+
+          <div class="form-row two-col">
+            <div class="form-field">
+              <label for="booking-guests">Количество гостей *</label>
+              <select id="booking-guests" name="guests" required>
+                <option value="2">2 гостя</option>
+                <option value="3">3 гостя</option>
+                <option value="4" selected>4 гостя</option>
+                <option value="6">6 гостей</option>
+                <option value="8">8 гостей</option>
+                <option value="10+">Более 10 гостей</option>
+              </select>
+              <span class="field-error" data-error-for="guests"></span>
+            </div>
+            <div class="form-field">
+              <label for="booking-name">Ваше имя *</label>
+              <input type="text" id="booking-name" name="name" placeholder="Например, Алексей" autocomplete="name" required>
+              <span class="field-error" data-error-for="name"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="booking-comment">Комментарий</label>
+              <textarea id="booking-comment" name="comment" placeholder="Пожелания по столу, лаунж-зоне или караоке"></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Отправить заявку (Демо)</button>
+          <p class="form-note">Демо-режим: реальное бронирование и передача персональных данных не выполняются.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contacts -->
+    <section class="section" id="contacts" aria-labelledby="contacts-heading">
+      <div class="container">
+        <div class="reveal">
+          <span class="eyebrow">Как нас найти</span>
+          <h2 class="section-title" id="contacts-heading">Контакты</h2>
+        </div>
+
+        <div class="contacts-grid reveal">
+          <div class="contact-block">
+            <span class="contact-label">Адрес</span>
+            <div class="contact-value" id="contact-address">г. Саратов, ул. имени И.В. Мичурина, 108</div>
+          </div>
+          <div class="contact-block">
+            <span class="contact-label">Телефон</span>
+            <div class="contact-value">
+              <a href="tel:+79271099700" id="contact-phone">+7 (927) 109-97-00</a>
+            </div>
+          </div>
+          <div class="contact-block">
+            <span class="contact-label">Режим работы</span>
+            <div class="contact-value" id="contact-hours">с 12:00 до последнего гостя</div>
+          </div>
+        </div>
+
+        <div class="contact-links reveal" id="contact-links">
+          <a class="btn btn-outline btn-sm" href="https://yandex.ru/maps/org/rekhab/161990883948/" target="_blank" rel="noopener noreferrer">Яндекс Карты</a>
+          <a class="btn btn-outline btn-sm" href="https://2gis.ru/saratov/firm/70000001064227320" target="_blank" rel="noopener noreferrer">2ГИС</a>
+          <a class="btn btn-outline btn-sm" href="https://vk.ru/rehab_saratov" target="_blank" rel="noopener noreferrer">ВКонтакте</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>Гастробар «Рехаб» · Саратов</span>
+      <span>Демонстрационная версия сайта. Не предназначена для эксплуатации.</span>
+    </div>
+  </footer>
+
+  <!-- Demo Booking Modal -->
+  <div class="modal-backdrop" id="demo-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-dialog">
+      <div class="modal-eyebrow">Демонстрационный режим</div>
+      <h3 class="modal-title" id="modal-title">Заявка не отправлена</h3>
+      <p class="modal-body">
+        Это демонстрационная версия сайта гастробара «Рехаб». В финальной версии кнопка бронирования будет мгновенно формировать заявку в мессенджер (Telegram, WhatsApp или MAX).
+      </p>
+      <div class="modal-summary" id="modal-summary"></div>
+      <button type="button" class="btn btn-primary" id="modal-close">Понятно</button>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
