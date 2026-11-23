@@ -188,7 +188,7 @@
       });
     });
 
-    renderReviewTab(data, "twogis");
+    renderReviewTab(data, "yandex");
   }
 
   function initMobileNav() {
